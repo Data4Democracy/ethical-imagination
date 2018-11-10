@@ -85,8 +85,12 @@ section.submissions{
 
 .jumbotron-ethics{
     background: $grey;
+    margin: 3rem;
         .container{
-            padding: 1rem 3rem;
+            padding: .25rem;
+                @include media-breakpoint-up(md){
+                    padding: 4rem 3rem 0;
+                }
 
         }
 
@@ -94,7 +98,7 @@ section.submissions{
             font-family: 'Libre Franklin', sans-serif;
             font-weight: 400;
             font-size: 3rem;
-            padding-bottom: 5rem;
+            //padding-bottom: 5rem;
         }
         h2, p{
             color: $pale-peach;
@@ -128,10 +132,10 @@ section.submissions{
 
 .content-animation {
   position: absolute;
-  //top: 81%;
+  //top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 180px;
+  height: 280px;
   overflow:hidden;
   margin: 1rem auto;
 
