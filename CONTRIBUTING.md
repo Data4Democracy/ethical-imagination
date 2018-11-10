@@ -1,4 +1,8 @@
-## How Can I Contribute?
+## How Can I Contribute?  
+
+### Joining the Working Group  
+
+You can join the Data for Democracy Ethics project here: 
 
 ### Reporting Bugs
 
