@@ -75,17 +75,18 @@ section{
 }
 
 section.submissions{
-    background-image: linear-gradient(to right, $tangerine, $sunlight);
-    padding: 0 .5rem 0 2rem;
+    background-image: linear-gradient(to right, $federalist, $sunlight);
+    border-right: 2rem solid $tangerine;
+    padding: 0 2rem 0 2rem;
         @include media-breakpoint-up(md){
-            padding: 0 3rem 0 7rem;
+            padding: 0 5rem 0 7rem;
         }
 
 }
 
 .jumbotron-ethics{
     background: $grey;
-    margin: 3rem;
+    //margin: 3rem;
         .container{
             padding: .25rem;
                 @include media-breakpoint-up(md){
@@ -120,7 +121,7 @@ section.submissions{
             display: block;
             padding: 1rem 2rem;
 
-                :hover{
+                button:hover{
                     background: $royal;
 
                 }
@@ -137,19 +138,19 @@ section.submissions{
   transform: translate(-50%, -50%);
   height: 280px;
   overflow:hidden;
-  margin: 1rem auto;
+  //margin: 1rem auto;
 
   font-family: 'Roboto Mono', monospace;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 35px;
   line-height: 50px;
   color: $white;
 
   &__container {
     font-weight: 800;
     overflow: hidden;
-    height: 50px;
-    padding: 0 50px;
+    height: 45px;
+    padding: 0 15px 0 30px;
 
     &:before {
       content: '[';
@@ -168,7 +169,7 @@ section.submissions{
 
       color: $sunlight;
       font-size: 42px;
-      line-height: 50px;
+      line-height: 45px;
 
       -webkit-animation-name: opacity;
       -webkit-animation-duration: 2s;
