@@ -1,6 +1,6 @@
 MIT License
 
-THEME Copyright (c) 2018 Nicolas Vanhoren
+THEME Copyright (c) 2018 GDEP Ethical Imagination Working Group
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
