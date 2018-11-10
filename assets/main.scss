@@ -10,6 +10,54 @@
 
 //GLOBAL STYLES
 //MGO GLOBAL STYLES HERE
+$royal: #00318C;
+$federalist:  #006BA6;
+$faint: #e5eaf3;
+$sunlight: #F2BA00;
+$tangerine: #F26B00;
+$umber: #732C02;
+$white: #fff;
+$butter: #FBEAB2;
+$cream: #fefcf7;
+$peach: #fbd2b2;
+$pale-peach: #fdf0e5;
+
+
+
+//Links Mixin
+@mixin links ($link, $visited, $hover, $active) {
+    & {
+        color: $link;
+        &:visited {
+            color: $visited;
+        }
+        &:hover {
+            color: $hover;
+            text-decoration: none;
+        }
+        &:active, &:focus {
+            color: $active;
+        }
+    }
+}
+
+a { @include links($federalist, $federalist, $tangerine, $tangerine); }
+
+//End Links Mixin
+
+body{
+    font-size: 16px;
+}
+
+.navbar-ethics{
+    background: #262626;
+    padding: 1rem auto;
+}
+
+section{
+    padding: 2rem 1rem;
+}
+
 
 //END GLOBAL STYLES
 
@@ -17,4 +65,39 @@
     max-width: 7rem !important;
     margin: 0 auto;
     display: block;
+}
+
+.jumbotron-ethics{
+    background: $tangerine;
+        .container{
+            padding: 1rem 3rem;
+
+        }
+
+        h2, p{
+            color: $pale-peach;
+        }
+
+        p:last-of-type{
+            padding-bottom: 1.5rem;
+        }
+        hr{
+            padding-bottom: 1.5rem;
+            width: 19rem;
+        }
+        button{
+            color: $pale-peach;
+            font-size: 1.5rem;
+            background: $federalist;
+            border: $federalist;
+            margin: 0 auto;
+            display: block;
+            padding: 1rem 2rem;
+
+                :hover{
+                    background: $royal;
+
+                }
+
+        }
 }
