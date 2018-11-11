@@ -75,10 +75,11 @@ section{
 }
 
 section.submissions{
-    background-image: linear-gradient(to right, $federalist, $sunlight);
-    border-right: 2rem solid $tangerine;
-    padding: 0 2rem 0 2rem;
+    background-image: linear-gradient(to right, $tangerine, $sunlight);
+    border-right: 1rem solid $federalist;
+    padding: 0 1rem 0 2rem;
         @include media-breakpoint-up(md){
+            border-right: 2rem solid $federalist;
             padding: 0 5rem 0 7rem;
         }
 
