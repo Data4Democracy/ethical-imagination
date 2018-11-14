@@ -393,6 +393,26 @@ section.submissions{
    }
 }
 
-h1.lh-condensed{
-    padding-top: 2rem;
+section.folded-story{
+
+    max-width: 1024px;
+    margin: 0 auto;
+
+    h1{
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 800;
+        font-size: 3rem;
+        padding-top: 2rem;
+    }
+
+
+    h1.prose{
+        margin: 0 auto;
+        padding-top: 2rem;
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 800;
+        font-size: 3rem;
+        padding-top: 2rem;
+
+    }
 }
