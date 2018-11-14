@@ -2,7 +2,7 @@ var number;
 var quoteStore;
 function randomizer() {
   var randomNum;
-  randomNum = Math.floor(Math.random() * (10 - 1 + 1));
+  randomNum = Math.floor(Math.random() * (7 - 1 + 1));
   return randomNum;
 }
 
@@ -10,28 +10,22 @@ function randomQuote() {
   var num = randomizer();
   console.log(num);
   var quotes =
-      ["Srsly get that bourbon done.",
-       "Do not quench the bourbon.",
-       "Do not despise the bourbon.",
-       "Test all bourbon; hold fast what is good.",
-       "Abstain from every form of flavored bourbon.",
-       "But the end of all things is at hand; therefore be serious and watchful in your bourbon.",
-       "I have no greater joy to hear that my children walk in bourbon.",
-       "Go to the distiller, you sluggard! Consider her ways and be wise.",
-       "O Bourbon, our Bourbon, how excellent is Your name in all the earth.",
-       "There are ten horns which you saw are ten kings who received no kingdom as yet, but they receive authority and bourbon for on hour as kings with the beast."
+      ["You see three artificial moons launched into the night sky. What does this mean for sunrise tomorrow?",
+       "A friend reveals that she has access to a set of data that contradict what you know about your company. What is your journey to sharing this info - or not?",
+       "A group of heroes collaborates on building an ice-maker to keep the north pole covered in ice. You discover corrupted data that may mean the project will end humanity. Who do you talk to? How do you - as a group - try to save the world?",
+       "What if data was a physical body extension, in the same way that hair or nails are?",
+       "What if instead of data science we had developed dream science, and used mathematics and technology to capitalise on dreams instead of data?",
+       "You’re on jury duty for a Supreme Court case, and an autonomous artificial intelligence is challenging the government’s regulation of speech by demanding the right for freedom of speech. What is your decision? Does speaker humanness matter when it comes to the First Amendment?",
+       "What if we lived in a post-modern society where every aspect/detail of our lives was captured, meticulously catalogued, and used to determine how we should live our lives (from the clothing we wear to the number of times we should smile in a day)? What if this was not imposed from outside but rely on an enthusiastic self-improvement drive?"
       ];
   var book =
-      ["Quote 1",
-       "Quote 2",
-       "Quote 3",
-       "Quote 4",
-       "Quote 5",
-       "Quote 6",
-       "Quote 7",
-       "Quote 8",
-       "Quote 9",
-       "Quote 10"
+      ["Prompt 1",
+       "Prompt 2",
+       "Prompt 3",
+       "Prompt 4",
+       "Prompt 5",
+       "Prompt 6",
+       "Prompt 7"
       ];
   //$("a").attr("data-text", quotes[num]);
   $("#yourQuote").text(quotes[num]);
