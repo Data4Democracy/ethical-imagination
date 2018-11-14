@@ -92,13 +92,20 @@ section{
     padding: auto 1rem;
 }
 
+section.svg-section{
+    padding: 0;
+    margin: 0;
+}
+
 
 //END GLOBAL STYLES
 
-.hero-section{
+section.hero-section{
     max-width: 70rem;
     margin: 2rem auto;
-    background: url('assets/img/ethical-header.svg') cover;
+    background: url('assets/img/web-banner.svg') no-repeat center cover;
+
+
     h1{
         font-family: 'Libre Franklin', sans-serif;
         font-weight: 800;
