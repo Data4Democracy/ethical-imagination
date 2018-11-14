@@ -76,9 +76,15 @@ body{
 }
 
 .navbar-ethics{
-    background: $sapphire;
+    background: $sapphire !important;
     font-family: 'Roboto Mono', monospace;
     // border-bottom: 2px dotted $faint;
+
+    li{
+
+            list-style: none;
+
+    }
 
      a, a:visited{
         color: $faint;
