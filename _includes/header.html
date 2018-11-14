@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-ethics">
   <div class="container-fluid">
-      <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}"><img src="/assets/img/ethics-logo.svg" width="30" height="30" alt=""></a>
+      <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}"><img src="/assets/img/logo-color.svg" width="90" height="90" alt=""></a>
 
     <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
@@ -11,14 +11,32 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        {%- for path in page_paths -%}
+          <div class="left sm-width-full py-1 mt-1 mt-lg-0">
+  <a class="align-middle link-primary text-accent" href="{{ site.baseurl }}/">
+    {{ site.title }}
+  </a>
+</div>
+<div class="right sm-width-full">
+  <ul class="list-reset mt-lg-1 mb-2 mb-lg-1">
+    {% for my_page in site.pages %}
+      {% if my_page.title %}
+      <li class="inline-block">
+        <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="{{ my_page.url | prepend: site.baseurl }}">
+          {{ my_page.title }}
+        </a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+        <!-- {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.title -%}
           <li class="nav-item">
             <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
           </li>
           {%- endif -%}
-        {% endfor -%}
+        {% endfor -%} -->
         <li class="nav-item">
           <a class="nav-link" href="{{ site.github.repository_url }}">Fork me on Github</a>
         </li>

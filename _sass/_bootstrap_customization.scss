@@ -93,6 +93,7 @@ section{
 .hero-section{
     max-width: 70rem;
     margin: 2rem auto;
+    background: url('assets/img/ethical-header.svg') cover;
     h1{
         font-family: 'Libre Franklin', sans-serif;
         font-weight: 800;
@@ -106,9 +107,10 @@ section{
     margin: 0 auto;
     display: block;
     border-radius: 100rem;
-    filter: blur(1px);
-    filter: hue-rotate(40deg);
-    -webkit-filter: hue-rotate(40deg);
+    //uncomment if you use the bokah pix
+    // filter: blur(1px);
+    // filter: hue-rotate(40deg);
+    // -webkit-filter: hue-rotate(40deg);
 
 }
 
@@ -327,7 +329,34 @@ section.submissions{
             font-weight: 800;
             font-size: 3rem;
         }
+
+        #yourQuote{
+            min-height: 10rem;
+        }
+
+        button{
+            color: $faint;
+            font-size: 1.5rem;
+            background: $federalist;
+            border: $federalist;
+            margin: 0 auto;
+            display: block;
+            padding: 2rem;
+
+                button:hover{
+                    background: $royal;
+                    color: $tangerine;
+
+                }
+
+        }
 }
+
+#writing-promps_jumbotron button:hover{
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
 
 .twitter-share-button{
   border-radius: 3px;
