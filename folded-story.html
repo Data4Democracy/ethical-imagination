@@ -1,21 +1,40 @@
 ---
-layout: home
+layout: post
+title: Folded Story
 ---
-<section class="hero-section">
+<section class="folded-story">
     <div class ="container">
         <div class="row">
             <!-- <div class ="img-fluid col-12"><img src ="assets/img/ethical-header.svg" /></div> -->
-            <div class="d-flex align-content-center flex-wrap">
-                <div class = "col-12 col-sm-3">
-                    <img class="img-fluid logo-img" src ="assets/img/art-pix.jpg" />
+                <div class = "col-12">
+                   {% for post in site.posts limit: 1 %}
+                     {% include post_block.html %}
+                   {% endfor %}
                 </div>
-                <div class="col-12 col-sm-9">
-                    <h1>Ethical Imagination</h1>
-                    <p>The <strong>Ethical Imagination</strong> working group (phrase coined by Laura Noren) brainstorms case studies that center upon the ideas of <strong>speculative fiction</strong>, <strong>science fiction</strong>, and <strong>ethical development</strong> occurring in conjunction with technological advances.</p>
-                </div>
-            <div>
         </div>
-    </div>
+</section>
+
+<section class="prompts">
+  <div class="jumbotron" id="writing-promps_jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h1>Writing Prompt Generator</h1><br>
+              <div>
+                  <a id="share" href="https://twitter.com/share" class="twitter-share-button" data-text="Generate a story idea " data-via="D4D" data-size="large"><span class="fa fa-twitter"><i class="fab fa-twitter"></i></span>Tweet Me</a>
+                </div>
+        </div>
+        <div class="col-md-9">
+          <h2 id="yourQuote"></h2>
+          <p id="yourAuth" class="italic"></p>
+                    <button class="btn btn-success btn-lg btn-block" type="submit">Generate a writing prompt</button>
+                    <!-- <div class="col-sm-2-offset-1"id="fb-share-button">
+                        <span>Share</span>
+                    </div> -->
+                </div>
+
+            </div>
+         </div>
 </section>
 
 <section class="submissions">
@@ -53,27 +72,4 @@ layout: home
     </div>
 
 </div>
-</section>
-
-<section class="prompts">
-  <div class="jumbotron" id="writing-promps_jumbotron">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3">
-          <h1>Writing Prompt Generator</h1><br>
-              <div>
-                  <a id="share" href="https://twitter.com/share" class="twitter-share-button" data-text="Generate a story idea " data-via="D4D" data-size="large"><span class="fa fa-twitter"><i class="fab fa-twitter"></i></span>Tweet Me</a>
-                </div>
-        </div>
-        <div class="col-md-9">
-          <h2 id="yourQuote"></h2>
-          <p id="yourAuth" class="italic"></p>
-                    <button class="btn btn-success btn-lg btn-block" type="submit">Generate a writing prompt</button>
-                    <!-- <div class="col-sm-2-offset-1"id="fb-share-button">
-                        <span>Share</span>
-                    </div> -->
-                </div>
-
-            </div>
-         </div>
 </section>
