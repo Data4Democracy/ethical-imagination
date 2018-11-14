@@ -66,7 +66,12 @@ a { @include links($federalist, $federalist, $tangerine, $tangerine); }
 body{
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.17rem;
+        h2{
+            font-family: 'Libre Franklin', sans-serif;
+            font-weight: 400;
+            font-size: 2rem;
+        }
 }
 
 .navbar-ethics{
