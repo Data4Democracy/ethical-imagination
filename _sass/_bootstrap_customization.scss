@@ -107,6 +107,19 @@ section{
 }
 
 
+h1.page-title:first-of-type{
+    padding: 1.5rem 0 0 1.5rem;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+
+p.post-content{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
 //END GLOBAL STYLES
 
 section.hero-section{
@@ -342,7 +355,7 @@ section.submissions{
 
 
 #writing-promps_jumbotron{
-    background: $faint;
+     background: $sunlight;
         h1{
             font-family: 'Libre Franklin', sans-serif;
             font-weight: 800;
@@ -417,6 +430,7 @@ section.folded-story{
     max-width: 1024px;
     margin: 0 auto;
 
+
     h1{
         font-family: 'Libre Franklin', sans-serif;
         font-weight: 800;
@@ -434,4 +448,24 @@ section.folded-story{
         padding-top: 2rem;
 
     }
+}
+
+
+    a.h5{
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+    a.title{
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+
+.rss-subscribe{
+    padding-left: 2.5rem;
 }
