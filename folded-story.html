@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Folded Story
+title: Folded Futures Story
 ---
 <section class="folded-story">
     <div class ="container">
         <div class="row">
-            <!-- <div class ="img-fluid col-12"><img src ="assets/img/ethical-header.svg" /></div> -->
-                <div class = "col-12">
+            <div class = "col-12">
                    {% for post in site.posts limit: 1 %}
                      {% include post_block.html %}
                    {% endfor %}
-                </div>
+            </div>
         </div>
 </section>
 
@@ -18,23 +17,23 @@ title: Folded Story
   <div class="jumbotron" id="writing-promps_jumbotron">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-12 col-md-5 col-lg-4">
           <h1>Writing Prompt Generator</h1><br>
               <div>
                   <a id="share" href="https://twitter.com/share" class="twitter-share-button" data-text="Generate a story idea " data-via="D4D" data-size="large"><span class="fa fa-twitter"><i class="fab fa-twitter"></i></span>Tweet Me</a>
                 </div>
         </div>
-        <div class="col-md-9">
-          <h2 id="yourQuote"></h2>
+        <div class="col-12 col-md-7 col-lg-8">
+          <h3 id="yourQuote"></h3>
           <p id="yourAuth" class="italic"></p>
                     <button class="btn btn-success btn-lg btn-block" type="submit">Generate a writing prompt</button>
                     <!-- <div class="col-sm-2-offset-1"id="fb-share-button">
                         <span>Share</span>
                     </div> -->
                 </div>
-
             </div>
-         </div>
+        </div>
+    </div>
 </section>
 
 <section class="submissions">
