@@ -1,6 +1,6 @@
 
 # Ethical Imagination project
-
+We, the Ethical Imagination group, are part of the [Global Data Ethics Project](https://www.datafordemocracy.org/project/global-data-ethics-project) at [Data for Democracy](https://www.datafordemocracy.org/), which is a collective of data practitioners seeking to use data for social good in ethical and inclusive ways. The community at D4D serves as the holding place for the governance and communication of a set of ethical principles that were imagined, created and written through consensus, in the data community for the data community. In our principles, it states: “Ensure that all data practitioners take responsibility for exercising ethical imagination in their work, including considering the implication of what came before and what may come after, and actively working to increase benefit and prevent harm to others.
 
 ## Contribution
 
